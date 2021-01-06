@@ -7,6 +7,8 @@ from machine import UART
 # M5StickVのGroveポートG34/G35をUARTで初期化
 fm.register(35, fm.fpioa.UART2_TX, force=True)
 fm.register(34, fm.fpioa.UART2_RX, force=True)
+
+# UART(uart番号, ボーレート, bits, パリティ, stopbit, タイムアウト時間, シリアルポートはバッファを介して受信し、バッファがいっぱいになると受信停止)
 uart_Port = UART(UART.UART2, 115200,8,0,0, timeout=1000, read_buf_len= 4096)
 cnt=0
 
