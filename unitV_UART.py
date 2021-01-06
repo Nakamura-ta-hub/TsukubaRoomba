@@ -4,7 +4,7 @@ from fpioa_manager import fm
 from Maix import GPIO
 from modules import ws2812
 
-class_ws2812 = ws2812(8, 1)
+class_ws2812 = ws2812(8, 1) # https://maixpy.sipeed.com/en/libs/peripheral_modules/ws2812.html
 
 fm.register(35, fm.fpioa.UART1_TX, force=True)
 fm.register(34, fm.fpioa.UART1_RX, force=True)
