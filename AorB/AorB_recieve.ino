@@ -8,7 +8,7 @@ void setup() {
   M5.Lcd.setTextSize(10);
   
   Serial.begin(115200);
-  Serial2.begin(115200, SERIAL_8N1, 21, 22);
+  Serial2.begin(115200, SERIAL_8N1, 32, 33);
   M5.Lcd.print("----");
 }
  
